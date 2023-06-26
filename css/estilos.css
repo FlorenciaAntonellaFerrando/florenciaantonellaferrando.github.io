@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Tilt+Prism&family=Varela+Round&display=swap');
+ 
+*{ margin: 0;
+   box-sizing: border-box; }
+
+
+    
+#img_logo{
+    left: 100px;
+    position: absolute;
+    top:10px;
+    width: 200px;
+}
+#texto {
+    left:300px;
+    position: absolute;
+    top:30px
+}
+h1 {
+font-size: 50px;
+font-family:'Comforter', cursive;
+color: #b287e7;
+
+}
+
+h2{
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(32, 31, 31);
+    
+    
+
+}
+
+/*h1{
+    font-size: 50px;
+    color: #b287e7;
+    left: 300px;
+    text-align: center;
+    padding: 20px;
+ 
+}*/
+
+body>header {
+    background-color: rgb(255, 250, 176);
+    height: 150px;   
+}
+
+body>header>div {
+    display: inline-block;
+   
+}
+body{
+    background-color:rgb(234, 201, 249); ;
+}
+aside {
+    border: 1px solid white;
+    position: absolute;
+    top: 250px;
+    width: 250px;
+    right:10px;
+    z-index: 2;
+    background-color: rgb(120, 71, 71);
+    padding: 2em;
+    border-radius: 15px;
+    height: 150px;
+    color: white;
+    
+
+}
+
+a {
+    text-decoration: none;
+    color:#272727;   
+}
+
+a:hover{text-decoration: underline;}
+ 
+nav {
+    background-color:rgb(252, 215, 215);
+    color: #272727;
+    padding-top:10px ;
+    padding-right:10px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    right:10px;
+    border-radius: 1em;
+    font-size:1em;
+    width:15%;
+ }
+h3{
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+
+#noticia_1 {
+    font-family: 'Varela Round', sans-serif;
+    height: 250px;
+    text-align: left;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-left: 50px;
+
+}
+
+#noticia_2 {
+    font-family: 'Varela Round', sans-serif;
+    height: 250px;
+    text-align: left;
+    font-size: 20px; 
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+#noticia_3 {
+    font-family: 'Varela Round', sans-serif;
+    height: 250px;
+    text-align: left;
+    font-size: 20px; ;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+#comentario_1 {
+    display: flex;
+    padding-top: 30px;
+    padding-left: 100px;
+    background-color: #f4f9ba;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+}
+
+#comentario_2 {
+    display: flex;
+    padding-left: 200px;
+    padding-top: 20px;
+    background-color: #f4f9ba;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+}
+
+#comentario_3 {
+    display: flex;
+    padding-left: 100px;
+    padding-top: 30px;
+    background-color: #f4f9ba;
+    padding-bottom: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+}
+
+#deja_tu_comentario {
+    height: 400px;
+    width: 300px;
+    background-color: rgb(235, 182, 249);
+    position: absolute;
+    top: 1100px;
+    right: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    display:table;
+    align-content:center ;
+    font-family:'Varela Round', sans-serif; 
+    
+
+}
+
+h4 {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+footer{
+    height: 100px;
+    padding-top: 40px;
+    text-align: right;
+    padding-right: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.usuario{ 
+    display: flex;
+}
