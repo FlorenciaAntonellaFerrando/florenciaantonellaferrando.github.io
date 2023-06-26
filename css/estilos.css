@@ -45,24 +45,37 @@ body>header>div {
     display: inline-block;
 }
 
-body{
+body {
     background-color:rgb(234, 201, 249); ;
 }
 aside {
     border: 1px solid white;
     position: absolute;
     top: 250px;
-    width: 250px;
+    width: 270px;
     right:10px;
     z-index: 2;
-    background-color: rgb(120, 71, 71);
     padding: 2em;
     border-radius: 15px;
-    height: 150px;
+    border-color: black;
+    height: 200px;
     color: white;
+    background-color: #5e72d2;
+    background-image: linear-gradient(43deg, #a965b8 0%, #626eba 46%, #a06696 100%);
 }
 
+aside > img {
+    width:150px;
+    height: 100px;
+    padding-left:50px;
+
+}
 a {
+  text-decoration:none;
+  color: rgb(190, 28, 219);
+}
+
+nav>ul>li>a {
     text-decoration: none;
     color:#272727;   
 }
@@ -70,7 +83,7 @@ a {
 a:hover{text-decoration: underline;}
  
 nav {
-    background-color:rgb(252, 215, 215);
+    background-color:rgb(235, 182, 249);
     color: #272727;
     padding-top:10px ;
     padding-right:10px;
@@ -94,6 +107,8 @@ h3{
     font-size: 20px;
     padding-top: 50px;
     padding-left: 50px;
+    width: 800px;
+   
 
 }
 
@@ -104,6 +119,7 @@ h3{
     font-size: 20px; 
     padding-top: 50px;
     padding-left: 50px;
+    width: 800px;
 }
 
 #noticia_3 {
@@ -113,6 +129,7 @@ h3{
     font-size: 20px; ;
     padding-left: 50px;
     padding-top: 50px;
+    width: 800px;
 }
 
 #comentario_1 {
@@ -169,6 +186,7 @@ h3{
     display:table;
     align-content:center ;
     font-family:'Varela Round', sans-serif; 
+    border-radius: 1em;
 }
 
 h4 {
@@ -185,6 +203,21 @@ footer{
     font-size: 20px;
 }
 
-.usuario{ 
+.comentario{ 
     display: flex;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 150px;
+    background-color: rgb(222, 220, 217);
+    margin-left: 10px;
+    border-radius: 1em;
+
+}
+label{
+     width:20px;
+    }
+
+input {
+    width: 200px;
 }

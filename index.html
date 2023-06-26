@@ -16,9 +16,9 @@
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#noticias">Noticias</a></li>
-            <li><a href="#deja_tu_comentario">Contacto</a></li>
+            <li><a href="index.html" title="Ir a inicio">Inicio</a></li>
+            <li><a href="#noticias" title="Ir a noticias">Noticias</a></li>
+            <li><a href="#deja_tu_comentario" title="Ir a dejar comentarios">Comentar</a></li>
         </ul>
 
     </nav>
@@ -28,7 +28,7 @@
                 <header><h3>Un juegazo para aprender css</h3></header>
                 <p>
                         Css Sushi es un juego para aprender css.<br>
-                        Pueden acceder al mismo <a href="https://flukeout.github.io/">aquí</a>
+                        Pueden acceder al mismo <a href="https://flukeout.github.io/" target="_blank">Aquí</a>
                 </p>
             </article>
             <article class="noticia" id="noticia_2"> 
@@ -43,28 +43,38 @@
                 <p>
                     Se le pidió a una IA que retrate a los simpsons en la vida real y esto es lo que salió.
                     Puedes verlos en el siguiente link
-                    <a href="https://elcomercio.pe/tecnologia/inteligencia-artificial/asi-se-verian-los-personajes-de-los-simpsons-en-la-vida-real-segun-una-ia-fotos-inteligencia-artificial-midjourney-noticia/?ref=ecr">Aquí</a>
+                    <a href="https://elcomercio.pe/tecnologia/inteligencia-artificial/asi-se-verian-los-personajes-de-los-simpsons-en-la-vida-real-segun-una-ia-fotos-inteligencia-artificial-midjourney-noticia/?ref=ecr" target="_blank">Aquí</a>
                 </p>
             </article>
 
         </section>
         <section id="comentarios">
             <article id="comentario_1">
-                <img src="./img/personaje-borracho-contento.png" id="usuario:1" />
-                <p>Muy bueno el curso!</p>
+                <div class="usuario">
+                    <img src="./img/personaje-borracho-contento.png" id="usuario:1" />
+                    <p>Horacio:</p>
+                </div>
+                <div class="comentario">
+                    <p>Muy bueno el curso!</p>
+                </div>
             </article>
             <article id="comentario_2">
                 <div class="usuario">
                     <img src="./img/personaje-exigente-medio.png" id="usuario_2" />
-                    <p>María Eugenia:</p>
+                    <p>Matias:</p>
                 </div>
-                <div>
-                   <p>Aprendí tanto que me llamaron a trabajar de google</p>
+                <div class="comentario">
+                   <p>Aprendí tanto que me llamaron a trabajar de Google</p>
                 </div>
             </article>
             <article id="comentario_3">
-                <img src="./img/personaje-intermedio-contento.png" id="usuario_3" />         
-                <p>Aguante el html</p>
+                <div class="usuario">
+                    <img src="./img/personaje-intermedio-contento.png" id="usuario_3" />         
+                    <p>Lucas:</p>
+                </div>
+                <div class="comentario">
+                    <p>Aguante el html &#128076 </p>
+                </div>
             </article>    
         </section>
         <section id="deja_tu_comentario">
@@ -83,6 +93,7 @@
     <aside>
         <h4>Contrata Fibrecorp</h4>
         <p>La mejor banda ancha para tu hogar</p>
+        <img src="./img/logofibrecorp.png" alt="logofibrecorp">
     </aside>
     <footer>
         CopyRight 2023 &copy;Digitalers
