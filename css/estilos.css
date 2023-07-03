@@ -43,7 +43,7 @@ body>header {
 }
 
 body>header>div {
-    display: inline-block;
+    display:inline-block;
 }
 
 body {
@@ -76,6 +76,10 @@ a {
   color: rgb(190, 28, 219);
 }
 
+li {
+    list-style-type:circle;
+}
+
 nav>ul>li>a {
     text-decoration: none;
     color:#272727;   
@@ -100,6 +104,9 @@ h3{
     padding-bottom: 15px;
     font-size: 30px;
 }
+
+
+
 
 #noticia_1 {
     font-family: 'Varela Round', sans-serif;
@@ -131,6 +138,19 @@ h3{
     padding-left: 50px;
     padding-top: 50px;
     width: 800px;
+}
+
+.comentario{ 
+    display: flex;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom:15px ;
+    width: 150px;
+    background-color: rgb(222, 220, 217);
+    margin-left: 10px;
+    border-radius: 1em;
+    box-shadow: 5px 15px 15px 3px #5a5858;
 }
 
 #comentario_1 {
@@ -175,24 +195,31 @@ h3{
 #deja_tu_comentario {
     height: 350px;
     width: 300px;
-    background-color: rgb(235, 182, 249);
+    background-color: #ebb6f9;
     position: absolute;
     top: 850px;
     right: 50px;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
     padding-right: 20px;
     font-weight: 700;
     font-size: 18px;
-    display:table;
-    align-content:center ;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     font-family:'Varela Round', sans-serif; 
+    border-style: solid;
+    border-color: #ebb6f9;;
     border-radius: 1em;
+    box-shadow: 25px 30px 30px 3px #5a5858;
+    
+    
 }
 
 h4 {
     padding-bottom: 20px;
     text-transform: uppercase;
+    text-align: center;
 }
 footer{
     height: 100px;
@@ -204,21 +231,23 @@ footer{
     font-size: 20px;
 }
 
-.comentario{ 
-    display: flex;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 150px;
-    background-color: rgb(222, 220, 217);
-    margin-left: 10px;
-    border-radius: 1em;
-
-}
 label{
      width:20px;
+     justify-content: center;
+   
     }
 
 input {
     width: 200px;
+    height: auto;
+}
+button {
+    
+    background-color: rgb(241, 235, 132);
+    padding: 15px;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    
 }
