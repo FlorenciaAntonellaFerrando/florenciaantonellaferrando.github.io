@@ -76,7 +76,7 @@ a {
   color: rgb(190, 28, 219);
 }
 
-li {
+ul {
     list-style-type:circle;
 }
 
@@ -233,8 +233,6 @@ footer{
 
 label{
      width:20px;
-     justify-content: center;
-   
     }
 
 input {
