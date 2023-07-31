@@ -299,16 +299,10 @@ article{
     font-family: 'Varela Round', sans-serif;
 }
 
-#usuario_1 {
-    width: 80px;
-}
-
-#usuario_2 {
-    width: 80px;
-}
-#usuario_3 {
-
-    width: 80px;
+.usuario{
+    img{
+        width: 80px;
+    }
 }
 
 .comentario{ 
@@ -741,5 +735,10 @@ footer{
         background-color:gray ;
         color: #e3e1e3;
     }
-
+    
+    .usuario{
+        img{
+            width: 100px;
+        }
+    }
 }
