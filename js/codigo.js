@@ -81,7 +81,7 @@ window.onload = function() {
         let comentario = document.getElementById("comentario");
         let email = document.getElementById("email");
 
-        divUser.innerHTML = `<img src="./img/personaje-intermedio-contento.png"><p>${usuario.value}:</p>`;
+        divUser.innerHTML = `<img src="./img/usuario.png"><p>${usuario.value}:</p>`;
         divComment.innerHTML = `<p>${comentario.value}</p>`;
         
         divUser.className = "usuario";
