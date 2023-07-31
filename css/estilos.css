@@ -866,14 +866,14 @@ footer{
         text-align: center;
         border: 2px dotted rgb(228, 226, 226);
         position: absolute;
-        top: 1820px;
-        width: 300px;
+        top: 1930px;
+        width: 200px;
         right:8px;
         z-index: 2;
         padding: 2em;
         border-radius: 15px;
         border-color: black;
-        height:300px;
+        height:280px;
         color: rgb(65, 63, 63) bold;
         background-color: #5e72d2;
         background-image: linear-gradient(43deg, #f7c5fa 0%, #97a1e1 46%, #f699e6 100%);
@@ -1146,7 +1146,7 @@ footer{
         text-align: center;
         border: 2px dotted rgb(228, 226, 226);
         position: absolute;
-        top: 2200px;
+        top: 2470px;
         width: 170px;
         right:8px;
         z-index: 2;
