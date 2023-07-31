@@ -3,13 +3,12 @@
 * {
     margin: 0;
     box-sizing: border-box;
-}
 
-body>header {
+}body>header {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 220px;
+    height: 300px;
     align-items: center;
     padding-top: 25px;
 
@@ -77,7 +76,7 @@ form {
     margin-bottom: 2em;
     box-shadow: -21px 35px 35px -2px rgba(31, 30, 30, 0.75);
     border-radius: 33px 50px 40px 0px;
-    width: 40%;
+    width: 90%;
     background-color: #eaaef3
 }
 
@@ -123,10 +122,11 @@ label {
     font-weight:bold;
 }
 
+
 #noticias {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content:space-between;
     width: 100%;
     height: auto;
     background-color: rgb(234, 201, 249);
@@ -175,7 +175,7 @@ li {
     text-decoration: none;
     padding: 0px 0px;
     margin: 15px;
-    background-color:#8a42e3;
+    background-color:#b287e7;
     border-radius: 5px;
     flex: 1;
     padding-top: 10px;
@@ -185,7 +185,7 @@ li {
 
 
 a:hover {
-    background-color: #b287e7;
+    background-color: #8a42e3;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.63);
     transform: scale(1.2);
     text-decoration: underline;
@@ -195,15 +195,15 @@ a:hover {
 
 .noticia {
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    columns: 3;
-    width: 30%;
+    justify-content: space-between;
+    flex-direction:column;
+    width: 100%;
     align-items: center;
     border: solid #b287e7 3px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-    margin: 50px;
+    margin-top: 50px;
+    
 }
 
 .noticia img {
@@ -229,26 +229,30 @@ a:hover {
 
 }
 
-h3 {
+.cabecera h3 {
     font-family: 'Varela Round', sans-serif;
     font-weight: 600;
     font-size: 30px;
     text-align: center;
     padding-bottom: 40px;
+    
+}
+.cabecera p{
+    text-align: center;
 }
 
 .cabecera {
-    padding: 30px;
-    width: 80%;
+    padding: 10px;
+    width: 100%;
 }
 
 aside {
-    font-size: 20px;
+    font-size: 25px;
     text-transform: uppercase;
     text-align: center;
     border: 2px dotted rgb(228, 226, 226);
     position: absolute;
-    top: 1000px;
+    top: 1650px;
     width: 400px;
     right:10px;
     z-index: 2;
@@ -268,8 +272,8 @@ aside:hover{
 
 
 aside > img {
-    width:100px;
-    height:100px;
+    width:120px;
+    height:120px;
     text-align: center;
 
 }
@@ -284,25 +288,34 @@ aside > img {
 
 article{
     border: solid rgb(130, 56, 130) 1px;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
     justify-content: center;
-    width: 50%;
+    width: 100%;
 }
 
 
 #comentario_1 {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: flex-start;
     padding-top: 30px;
+    padding-left: 50px;
     font-weight: 700;
     font-family: 'Varela Round', sans-serif;
 }
 
 .usuario{
     img{
-        width: 80px;
+        width: 200px;
     }
+}
+
+#h3Comentario{
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .comentario{ 
@@ -310,11 +323,11 @@ article{
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom:20px ;
-    width: 500px;
+    width: 60%;
     height: auto;
     background-color: rgb(222, 220, 217);
     margin-left: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     border-radius: 1em;
     box-shadow: 5px 15px 15px 3px #5a5858;;
     border-radius: 0px 33px 40px 50px;
@@ -322,13 +335,16 @@ article{
 
 
 footer{
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: auto;
     padding-top: 100px;
-    text-align: right;
+    text-align: center;
+    align-items: center;
     padding-right: 60px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
     font-size: 20px;
@@ -337,7 +353,365 @@ footer{
 }
 
 
+@media (max-width:1200px) {
+    body>header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+        align-items: center;
+        padding-top: 25px;
+    
+    }
+
+    #h3Comentario{
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    #logo {
+        padding-bottom: 10px;
+        padding-right: 30px;
+    
+    }
+    
+    #titulos {
+        text-align: left;
+        align-items: center;
+        padding-bottom: 10px;
+        padding-left: 30px;
+    
+    }
+    
+    h1 {
+        font-size: 90px;
+        font-family: 'Comforter', cursive;
+        color: #b287e7;
+    }
+    
+    h2 {
+        font-size: 20px;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 600;
+        color: rgb(32, 31, 31);
+    }
+    
+    strong {
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 600;
+        color: rgb(32, 31, 31);
+    }
+    
+    body>header {
+        background-color: rgb(255, 250, 176);
+    }
+    
+    body {
+        /*background-image: url(/img/1366_2000.jpg);*/
+        background-color: rgb(234, 201, 249);
+    }
+    
+    
+    form {
+        display: flex;
+        flex-direction: column; 
+    }
+    
+    #formWrapper {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(255, 250, 176);
+        padding: 30px;
+      
+    }   
+    
+    #formWrapper>div {
+        border: 1px solid grey;
+        padding: 2em;
+        margin-bottom: 2em;
+        box-shadow: -21px 35px 35px -2px rgba(31, 30, 30, 0.75);
+        border-radius: 33px 50px 40px 0px;
+        width: 90%;
+        background-color: #eaaef3
+    }
+    
+    input {
+        margin-bottom: 1.5em;
+        font-size: 1.5em;
+        border-radius: 4px;
+        border-color:  rgb(207, 124, 223);
+    }
+    
+    textarea{
+        width: 100%;
+    }
+    
+    button {
+        margin-top: 20px;
+        background-color: #8a42e3;
+        padding: 1em;
+        border-radius: 10px;
+        border: 0px;
+        font-size: 25px;
+        font-weight: 600;
+        text-transform: uppercase;
+    
+    }
+    
+    button:hover {
+        background-color: #b287e7; 
+        box-shadow:6px 13px 53px -15px rgba(84, 81, 81, 0, 85);
+    }
+    #formWrapper h4 {
+        text-align: center;
+        margin-bottom: 2em;
+        font-size: 2em;
+        text-transform: uppercase;
+        background-color:  #8a42e3;
+        border: solid 1px  #8a42e3 ;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    label {
+        font-size: 1.5em;
+        font-weight:bold;
+    }
+    
+    #noticias {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+        background-color: rgb(234, 201, 249);
+    
+    }
+    
+    #noticia1 img{
+        width: 400px;
+    
+        
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 100%;
+        background-color: #eaaef3;
+        height: 80px;
+    
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* Centramos los elementos en el nav */
+    }
+    
+    li {
+        padding: 0;
+        width: 150px;
+       
+    }
+    
+    .estiloLinkNav {
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        display: block;
+        text-align: center;
+        color: #e3e1e3;
+        text-decoration: none;
+        padding: 0px 0px;
+        margin: 15px;
+        background-color:#b287e7;
+        border-radius: 5px;
+        flex: 1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    
+    }
+    
+    
+    a:hover {
+        background-color: #8a42e3;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.63);
+        transform: scale(1.2);
+        text-decoration: underline;
+    
+    
+    }
+    
+    .noticia {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        border: solid #b287e7 3px;
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+        
+    }
+    
+    .noticia img {
+        width: 350px;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    
+    
+    
+    }
+    
+    .noticia a {
+        text-decoration: none;
+        color: #b287e7
+    }
+    
+    .noticia a:hover {
+        background-color: rgb(234, 201, 249);
+        text-decoration: underline;
+        box-shadow: 0px 0px 0px;
+        transform: scale(1.2);
+    
+    }
+    
+    .cabecera h3 {
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        text-align: left;
+        padding-bottom: 40px;
+        
+    }
+    .cabecera p{
+        text-align: justify;
+    }
+    
+    .cabecera {
+        padding: 30px;
+        width: 80%;
+    }
+    
+    aside {
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        border: 2px dotted rgb(228, 226, 226);
+        position: absolute;
+        top: 2000px;
+        width: 400px;
+        right:10px;
+        z-index: 2;
+        padding: 2em;
+        border-radius: 15px;
+        border-color: black;
+        height: 300px;
+        color: rgb(65, 63, 63) bold;
+        background-color: #5e72d2;
+        background-image: linear-gradient(43deg, #f7c5fa 0%, #97a1e1 46%, #f699e6 100%);
+    }
+    
+    aside:hover{
+        transform:scale(2,2);
+        right: 200px;
+    }
+    
+    
+    aside > img {
+        width:100px;
+        height:100px;
+        text-align: center;
+    
+    }
+    
+    #comentarios{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 30px;
+        align-items: center;
+    }
+    
+    article{
+        border: solid rgb(130, 56, 130) 1px;
+        margin-bottom: 30px;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    
+    #comentario_1 {
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        padding-top: 30px;
+        padding-left: 50px;
+        font-weight: 700;
+        font-family: 'Varela Round', sans-serif;
+    }
+    
+    .usuario{
+        img{
+            width: 150px;
+        }
+    }
+    
+    .comentario{ 
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom:20px ;
+        width: 700px;
+        height: auto;
+        background-color: rgb(222, 220, 217);
+        margin-left: 40px;
+        margin-bottom: 30px;
+        border-radius: 1em;
+        box-shadow: 5px 15px 15px 3px #5a5858;;
+        border-radius: 0px 33px 40px 50px;
+    }
+    
+    
+    footer{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding-top: 100px;
+        text-align: center;
+        align-items: center;
+        padding-right: 60px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        font-size: 20px;
+        background-color:gray ;
+        color: #e3e1e3;
+    }
+    
+}
+
 @media (max-width:768px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        width: 100vh;
+        height: 220px;
+        align-items: center;
+    }
 
     nav {
         display: flex;
@@ -349,6 +723,14 @@ footer{
         background-color: #eaaef3;
         height: 50px;
     
+    }
+
+    #h3Comentario{
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        padding-bottom: 20px;
+        text-transform: uppercase;
     }
     
     ul {
@@ -404,11 +786,11 @@ footer{
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 60px;
     }
 
     h2 {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     #titulos {
@@ -421,7 +803,21 @@ footer{
     li {
         margin: 30px;
     }
-
+    
+    .noticia {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        columns: 1;
+        width: 100%;
+        align-items: center;
+        border: solid #b287e7 3px;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 30px;
+       
+    }
+    
     #noticias {
         display: flex;
         flex-direction:column;
@@ -456,6 +852,171 @@ footer{
     #menu a{
         padding: 10px;
     }
+
+    .cabecera {
+        padding-top: 10px;
+        width: 80%;
+        }
+    
+    .cabecera h3{
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .cabecera p{
+        text-align:justify ;
+    }
+    
+    aside {
+        font-size: 15px;
+        text-transform: uppercase;
+        text-align: center;
+        border: 2px dotted rgb(228, 226, 226);
+        position: absolute;
+        top: 1820px;
+        width: 300px;
+        right:8px;
+        z-index: 2;
+        padding: 2em;
+        border-radius: 15px;
+        border-color: black;
+        height:300px;
+        color: rgb(65, 63, 63) bold;
+        background-color: #5e72d2;
+        background-image: linear-gradient(43deg, #f7c5fa 0%, #97a1e1 46%, #f699e6 100%);
+    }
+        
+    aside:hover{
+        transform:scale(2,2);
+        right: 200px;
+    }
+        
+        
+    aside > img {
+        width:100px;
+        height:100px;
+        text-align: center;
+        
+    }
+
+    #comentarios{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: center;
+    }
+    
+    article{
+        border: solid  #b287e7 1px;
+        margin-bottom: 30px;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    
+    
+    #comentario_1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: 700;
+        font-family: 'Varela Round', sans-serif;
+    }
+    
+    #menu a{
+        padding: 10px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column; 
+    }
+    
+    #formWrapper {
+        display: flex;
+        justify-content: flex-start;
+        background-color: rgb(255, 250, 176);
+        padding: 30px;
+      
+    }   
+    
+    #formWrapper>div {
+        border: 1px solid grey;
+        padding: 2em;
+        margin-bottom: 2em;
+        box-shadow: -21px 35px 35px -2px rgba(31, 30, 30, 0.75);
+        border-radius: 33px 50px 40px 0px;
+        width: 100%;
+        background-color: #eaaef3
+    }
+    
+    input {
+        margin-bottom: 1.5em;
+        font-size: 1.5em;
+        border-radius: 4px;
+        border-color:  rgb(207, 124, 223);
+    }
+    
+    textarea{
+        width: 100%;
+    }
+    
+    button {
+        margin-top: 20px;
+        background-color: #8a42e3;
+        padding: 1em;
+        border-radius: 10px;
+        border: 0px;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+    
+    }
+    
+    button:hover {
+        background-color: #b287e7; 
+        box-shadow:6px 13px 53px -15px rgba(84, 81, 81, 0, 85);
+    }
+    #formWrapper h4 {
+        text-align: center;
+        margin-bottom: 2em;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        background-color:  #8a42e3;
+        border: solid 1px  #8a42e3 ;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    label {
+        font-size: 1em;
+        font-weight:bold;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        font-size: 15px;
+        background-color:gray ;
+        color: #e3e1e3;
+    }
+    
+    .usuario{
+        img{
+            width: 150px;
+        }
+    }
+
 }
 
 @media (max-width:595px) {
@@ -564,17 +1125,8 @@ footer{
 
     
     .noticia {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    columns: 1;
-    width: 100%;
-    align-items: center;
-    border: solid #b287e7 1px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0px;
+        margin: 0px;
+        margin-bottom: 10px;
     }
 
     
@@ -740,5 +1292,13 @@ footer{
         img{
             width: 100px;
         }
+    }
+
+    #h3Comentario{
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        padding-bottom: 20px;
+        text-transform: uppercase;
     }
 }
