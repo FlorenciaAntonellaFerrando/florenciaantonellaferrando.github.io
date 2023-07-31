@@ -126,7 +126,7 @@ label {
 #noticias {
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 100%;
     height: auto;
     background-color: rgb(234, 201, 249);
@@ -136,6 +136,7 @@ label {
 #noticia1 img{
     width: 400px;
 }
+
 nav {
     display: flex;
     flex-direction: column;
@@ -194,25 +195,24 @@ a:hover {
 .noticia {
     display: flex;
     justify-content: space-between;
-    flex-direction:column;
+    flex-direction:row;
     width: 100%;
     align-items: center;
     border: solid #b287e7 3px;
     padding: 10px;
+    padding-top: 30px;
     text-align: center;
     margin-top: 50px;
-    background-color:#eaaef3; 
-    
+    background-color: #eaaef3; 
 }
 
 .noticia img {
-    width: 350px;
+    width: 700px;
     height: auto;
     padding-top: 10px;
+    padding-right: 200px;
     padding-bottom: 10px;
-
-
-
+ 
 }
 
 .noticia a {
@@ -225,24 +225,25 @@ a:hover {
     text-decoration: underline;
     box-shadow: 0px 0px 0px;
     transform: scale(1.2);
-
 }
 
 .cabecera h3 {
     font-family: 'Varela Round', sans-serif;
     font-weight: 600;
-    font-size: 30px;
-    text-align: center;
+    font-size: 35px;
+    text-align: left;
     padding-bottom: 40px;
-    
 }
+
 .cabecera p{
-    text-align: center;
+    text-align: left;
+    font-size: 25px;
 }
 
 .cabecera {
     padding: 10px;
     width: 100%;
+    padding-left: 150px;
 }
 
 aside {
@@ -576,16 +577,18 @@ footer{
     .cabecera h3 {
         font-family: 'Varela Round', sans-serif;
         font-weight: 600;
-        font-size: 30px;
+        font-size: 35px;
         text-align: left;
         padding-bottom: 40px;
-    }
+       
     .cabecera p{
         text-align: justify;
+        font-size: 20px;
     }
     
     .cabecera {
         padding: 30px;
+        padding-left: 30px;
         width: 80%;
     }
     
@@ -810,6 +813,7 @@ footer{
         justify-content: flex-start;
         width: 100%;
         height: auto;
+        margin-top: 20px;
     }
 
     #noticia1 {
@@ -850,7 +854,8 @@ footer{
     }
     
     .cabecera p{
-        text-align:justify ;
+        text-align:justify;
+        font-size: 20px;
     }
     
     aside {
@@ -1003,6 +1008,15 @@ footer{
         }
     }
 
+    .noticia img {
+        width: 500px;
+        height: auto;
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+     
+        }
 }
 
 @media (max-width:595px) {
@@ -1127,7 +1141,9 @@ footer{
     }
 
     .cabecera p{
-        text-align:justify ;
+        text-align:justify;
+        font-size: 20px;
+
     }
 
     aside {
@@ -1286,5 +1302,16 @@ footer{
         font-size: 30px;
         padding-bottom: 20px;
         text-transform: uppercase;
+    }
+
+    
+    .noticia img {
+    width: 500px;
+    height: auto;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+ 
     }
 }
