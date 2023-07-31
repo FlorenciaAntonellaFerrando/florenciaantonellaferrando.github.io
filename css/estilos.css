@@ -76,7 +76,7 @@ form {
     margin-bottom: 2em;
     box-shadow: -21px 35px 35px -2px rgba(31, 30, 30, 0.75);
     border-radius: 33px 50px 40px 0px;
-    width: 90%;
+    width: 70%;
     background-color: #eaaef3
 }
 
@@ -135,8 +135,6 @@ label {
 
 #noticia1 img{
     width: 400px;
-
-    
 }
 nav {
     display: flex;
@@ -203,6 +201,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     margin-top: 50px;
+    background-color:#eaaef3; 
     
 }
 
@@ -294,7 +293,7 @@ article{
 }
 
 
-#comentario_1 {
+.comentario_1 {
     display: flex;
     justify-content: left;
     align-items: flex-start;
@@ -352,6 +351,7 @@ footer{
     color: #e3e1e3;
 }
 
+/* */
 
 @media (max-width:1200px) {
     body>header {
@@ -361,7 +361,6 @@ footer{
         height: 300px;
         align-items: center;
         padding-top: 25px;
-    
     }
 
     #h3Comentario{
@@ -383,7 +382,6 @@ footer{
         align-items: center;
         padding-bottom: 10px;
         padding-left: 30px;
-    
     }
     
     h1 {
@@ -424,8 +422,7 @@ footer{
         display: flex;
         justify-content: center;
         background-color: rgb(255, 250, 176);
-        padding: 30px;
-      
+        padding: 30px; 
     }   
     
     #formWrapper>div {
@@ -458,13 +455,13 @@ footer{
         font-size: 25px;
         font-weight: 600;
         text-transform: uppercase;
-    
     }
     
     button:hover {
         background-color: #b287e7; 
         box-shadow:6px 13px 53px -15px rgba(84, 81, 81, 0, 85);
     }
+
     #formWrapper h4 {
         text-align: center;
         margin-bottom: 2em;
@@ -475,6 +472,7 @@ footer{
         border-radius: 10px;
         padding: 20px;
     }
+
     label {
         font-size: 1.5em;
         font-weight:bold;
@@ -487,14 +485,12 @@ footer{
         width: 100%;
         height: auto;
         background-color: rgb(234, 201, 249);
-    
     }
     
     #noticia1 img{
         width: 400px;
-    
-        
     }
+
     nav {
         display: flex;
         flex-direction: column;
@@ -504,7 +500,6 @@ footer{
         width: 100%;
         background-color: #eaaef3;
         height: 80px;
-    
     }
     
     ul {
@@ -519,7 +514,6 @@ footer{
     li {
         padding: 0;
         width: 150px;
-       
     }
     
     .estiloLinkNav {
@@ -537,7 +531,6 @@ footer{
         flex: 1;
         padding-top: 10px;
         padding-bottom: 10px;
-    
     }
     
     
@@ -546,8 +539,6 @@ footer{
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.63);
         transform: scale(1.2);
         text-decoration: underline;
-    
-    
     }
     
     .noticia {
@@ -560,7 +551,7 @@ footer{
         padding: 20px;
         text-align: center;
         margin-top: 50px;
-        
+        background-color:#eaaef3;
     }
     
     .noticia img {
@@ -568,9 +559,6 @@ footer{
         height: auto;
         padding-top: 10px;
         padding-bottom: 10px;
-    
-    
-    
     }
     
     .noticia a {
@@ -583,7 +571,6 @@ footer{
         text-decoration: underline;
         box-shadow: 0px 0px 0px;
         transform: scale(1.2);
-    
     }
     
     .cabecera h3 {
@@ -592,7 +579,6 @@ footer{
         font-size: 30px;
         text-align: left;
         padding-bottom: 40px;
-        
     }
     .cabecera p{
         text-align: justify;
@@ -632,7 +618,6 @@ footer{
         width:100px;
         height:100px;
         text-align: center;
-    
     }
     
     #comentarios{
@@ -651,7 +636,7 @@ footer{
     }
     
     
-    #comentario_1 {
+    .comentario_1 {
         display: flex;
         justify-content: left;
         align-items: flex-start;
@@ -815,6 +800,7 @@ footer{
         text-align: center;
         margin: 0;
         margin-bottom: 30px;
+        background-color:#eaaef3;
        
     }
     
@@ -918,7 +904,7 @@ footer{
     }
     
     
-    #comentario_1 {
+    .comentario_1 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1125,7 +1111,7 @@ footer{
 
     
     .noticia {
-        margin: 0px;
+        margin-top: 20px;
         margin-bottom: 10px;
     }
 
@@ -1150,7 +1136,7 @@ footer{
         text-align: center;
         border: 2px dotted rgb(228, 226, 226);
         position: absolute;
-        top: 1900px;
+        top: 2200px;
         width: 170px;
         right:8px;
         z-index: 2;
@@ -1195,7 +1181,7 @@ footer{
     }
     
     
-    #comentario_1 {
+    .comentario_1 {
         display: flex;
         justify-content: center;
         align-items: center;

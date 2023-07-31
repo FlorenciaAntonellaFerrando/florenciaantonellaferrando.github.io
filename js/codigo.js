@@ -86,7 +86,8 @@ window.onload = function() {
         
         divUser.className = "usuario";
         divComment.className = "comentario";
-        articulo.setAttribute("id","comentario_1");
+        articulo.className = "comentario_1";
+        //articulo.setAttribute("id","comentario_1");
 
         seccionComentario.appendChild(articulo);
         articulo.appendChild(divUser);
