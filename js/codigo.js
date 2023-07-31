@@ -3,18 +3,18 @@ window.onload = function() {
     //creo el json con las noticias
     const noticias = [
         {titulo : "Un juegazo para aprender css",
-        cuerpo : "Css Sushi es un juego para aprender de forma divertida Flexbox de Css<br>Pueden acceder al mismo",
+        cuerpo : "Css Sushi es un juego para aprender de forma divertida Flexbox de Css.<br>Pueden acceder al mismo",
         link : "https://flukeout.github.io/",
         txtLink : "Aqui",
         txtimagen : "imagen de juego css",
-        imagen : "./img/4cddd152aa683e900064bf60c4747940.png"},
+        imagen : "./img/cssSushi.png"},
         
         {titulo : "Digitalers es la mejor propuesta de capacitación",
         cuerpo : "Queres ser un jedi del frontend?<br> ¿Qué estás esperando? <br>El programa digitalers es tu oportunidad.",
         link : false,
         txtLink : "Aqui",
         txtimagen : "",
-        imagen : false},
+        imagen : "./img/digitalers.jpg"},
         
         {titulo : "Una IA crea los simpsons en la vida real",
         cuerpo : "Se le pidió a una IA que retrate a los simpsons en la vida real y esto es lo que salió.Puedes verlos en el siguiente link",
