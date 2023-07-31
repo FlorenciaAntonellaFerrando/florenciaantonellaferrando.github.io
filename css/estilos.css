@@ -4,7 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 
-}body>header {
+}
+
+body>header {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -54,6 +56,7 @@ body>header {
 body {
     /*background-image: url(/img/1366_2000.jpg);*/
     background-color: rgb(234, 201, 249);
+
 }
 
 
@@ -173,7 +176,6 @@ li {
     color: #e3e1e3;
     text-decoration: none;
     padding: 0px 0px;
-    margin: 15px;
     background-color:#b287e7;
     border-radius: 5px;
     flex: 1;
@@ -526,7 +528,6 @@ footer{
         color: #e3e1e3;
         text-decoration: none;
         padding: 0px 0px;
-        margin: 15px;
         background-color:#b287e7;
         border-radius: 5px;
         flex: 1;
@@ -695,12 +696,13 @@ footer{
 
 @media (max-width:768px) {
 
-    header {
+    body>header {
         display: flex;
         justify-content: center;
-        width: 100vh;
+        width: 100%;
         height: 220px;
         align-items: center;
+        margin: 0;
     }
 
     nav {
@@ -747,7 +749,6 @@ footer{
         color: #e3e1e3;
         text-decoration: none;
         padding: 0px 0px;
-        margin: 15px;
         background-color: #b287e7;
         border-radius: 5px;
         flex: 1;
@@ -788,7 +789,6 @@ footer{
         align-items: center;
         padding-bottom: 10px;
     }
-
 
     li {
         margin: 30px;
@@ -1095,7 +1095,8 @@ footer{
     
     li {
         padding: 0;
-        width:100%
+        width:100%;
+       
     }
     
     .estiloLinkNav {
@@ -1299,7 +1300,7 @@ footer{
     }
 
     .noticia img {
-    width: 500px;
+    width: 400px;
     height: auto;
     padding-top: 10px;
     padding-right: 20px;
@@ -1307,4 +1308,5 @@ footer{
     padding-bottom: 10px;
  
     }
+    
 }
