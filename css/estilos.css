@@ -580,6 +580,7 @@ footer{
         font-size: 35px;
         text-align: left;
         padding-bottom: 40px;
+    }    
        
     .cabecera p{
         text-align: justify;
@@ -1080,8 +1081,6 @@ footer{
         width: 100%;
         background-color: #eaaef3;
         height: 50px;
-        
-    
     }
     
     ul {
@@ -1091,7 +1090,6 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
-       
     }
     
     li {
@@ -1108,9 +1106,6 @@ footer{
         color: #e3e1e3;
         text-decoration: none;
         background-color: #b287e7;
-      
-        
-    
     }
     
     
@@ -1119,8 +1114,6 @@ footer{
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.63);
         transform: scale(1.2);
         text-decoration: underline;
-    
-    
     }
 
     
@@ -1304,7 +1297,6 @@ footer{
         text-transform: uppercase;
     }
 
-    
     .noticia img {
     width: 500px;
     height: auto;
