@@ -2,81 +2,66 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" media="all" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta charset="UTF-8">
     <title>Digitalers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/codigo.js"></script>
+
 </head>
 
 <body>
     <header>
-        <div id="img_logo">
-            <img src="img/LOGO DIGITALERS.png" width="200px" />
+        <div id="logo">
+            <img src="img/LOGO DIGITALERS.png" width="200px" alt="logo del portal digitalers" />
         </div>
-        <div id="texto">
-            <h1>Digitalers Portal</h1>
-            <h2>Las últimas noticias del curso de <strong>Digitalers</strong></h2>
+        <div id="titulos">
+            <div id="titulo1">
+                <h1>Digitalers Portal</h1>
+            </div>
+            <div id="titulo2">
+                <h2>Las últimas noticias del curso de <strong>Digitalers</strong></h2>
+            </div>
         </div>
     </header>
-    <nav>
+    <nav id="menu">
         <ul>
-            <li><a href="index.html" title="Ir a inicio">Inicio</a></li>
-            <li><a href="#noticias" title="Ir a noticias">Noticias</a></li>
-            <li><a href="#deja_tu_comentario" title="Ir a dejar comentarios">Comentar</a></li>
+            <li><a class="estiloLinkNav" href="index.html" title="Ir a inicio">Inicio</a></li>
+            <li><a class="estiloLinkNav" href="#noticias" title="Ir a noticias">Noticias</a></li>
+            <li><a class="estiloLinkNav" href="#formWrapper" title="Ir a dejar comentarios">Comentar</a></li>
         </ul>
-
     </nav>
     <main>
         <section id="noticias">
-            <article class="noticia" id="noticia_1">
-                <header>
-                    <h3>Un juegazo para aprender css</h3>
-                </header>
-                <p>
-                    Css Sushi es un juego para aprender css.<br>
-                    Pueden acceder al mismo <a href="https://flukeout.github.io/" target="_blank">Aquí</a>
-                </p>
-            </article>
-            <article class="noticia" id="noticia_2">
-                <header>
-                    <h3>Digitalers es la mejor propuesta de capacitación</h3>
-                </header>
-                <p>
-                    Queres ser un jedi del frontend?<br> ¿Qué estás esperando? <br>
-                    El programa digitalers es tu oportunidad.
-                </p>
-            </article>
-            <article class="noticia" id="noticia_3">
-                <header>
-                    <h3>Una IA crea los simpsons en la vida real </h3>
-                </header>
-                <p>
-                    Se le pidió a una IA que retrate a los simpsons en la vida real y esto es lo que salió.
-                    Puedes verlos en el siguiente link
-                    <a href="https://elcomercio.pe/tecnologia/inteligencia-artificial/asi-se-verian-los-personajes-de-los-simpsons-en-la-vida-real-segun-una-ia-fotos-inteligencia-artificial-midjourney-noticia/?ref=ecr"
-                        target="_blank">Aquí</a>
-                </p>
-            </article>
-
+        
         </section>
+
         <section id="comentarios">
+
+
             <article id="comentario_1">
                 <div class="usuario">
-                    <img src="./img/personaje-borracho-contento.png" id="usuario:1" />
+                    <img src="./img/personaje-intermedio-contento.png" id="usuario_1" />
                     <p>Horacio:</p>
                 </div>
                 <div class="comentario">
                     <p>Muy bueno el curso!</p>
                 </div>
             </article>
-            <article id="comentario_2">
+
+
+            <article id="comentario_1">
                 <div class="usuario">
-                    <img src="./img/personaje-exigente-medio.png" id="usuario_2" />
+                    <img src="./img/personaje-intermedio-contento.png" id="usuario_2" />
                     <p>Matias:</p>
                 </div>
                 <div class="comentario">
                     <p>Aprendí tanto que me llamaron a trabajar de Google</p>
                 </div>
             </article>
-            <article id="comentario_3">
+            <article id="comentario_1">
                 <div class="usuario">
                     <img src="./img/personaje-intermedio-contento.png" id="usuario_3" />
                     <p>Lucas:</p>
@@ -85,23 +70,29 @@
                     <p>Aguante el html &#128076 </p>
                 </div>
             </article>
+
         </section>
-        <section id="deja_tu_comentario">
-            <div>
-                <h4>Registrate para comentar</h4>
-            </div>
-            <div>
-                <form class="form">
-                    <label>Nombre:</label>
-                    <input type="text" placeholder="Nombre" required />
-                    <label>Correo: (opcional) </label>
-                    <input type="email" placeholder="Correo" />
-                    <label>Comentarios </label>
-                    <textarea></textarea>
-                    <button>Dejar Comentarios</button>
-                </form>
+        <section>
+            <div id="formWrapper">
+                <div>
+                    <h4>Registrate para comentar</h4>
+                    <form id="formulario">
+                        
+                        <label for="nombre">Nombre: <em>*</em></label>
+                        <input id="nombre" type="text" placeholder="Nombre" required />
+                        
+                        <label for="email">Email: (opcional) </label>
+                        <input id="email" type="email" placeholder="Email" />
+                        
+                        <label>Comentario</label>
+                        <textarea id="comentario" type="text" required></textarea>
+                        
+                        <button id="dejarComentarios" type="button">Dejar Comentarios</button>
+                    </form>
+                </div>
             </div>
         </section>
+
     </main>
     <aside>
         <h4>Contrata Fibrecorp</h4>
@@ -111,6 +102,9 @@
     <footer>
         CopyRight 2023 &copy;Digitalers
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

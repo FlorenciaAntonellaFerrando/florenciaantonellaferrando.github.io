@@ -1,258 +1,634 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Tilt+Prism&family=Varela+Round&display=swap');
- 
-*{ margin: 0;
-   box-sizing: border-box; }
 
-#img_logo{
-    left: 100px;
-    position: absolute;
-    top:25px;
-    width: 200px;
+* {
+    margin: 0;
+    box-sizing: border-box;
 }
 
-#texto {
-    left:300px;
-    position: absolute;
-    top:30px
+body>header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 220px;
+    align-items: center;
+    padding-top: 25px;
+
+}
+
+#logo {
+    padding-bottom: 10px;
+    padding-right: 30px;
+
+}
+
+#titulos {
+    text-align: left;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-left: 30px;
+
 }
 
 h1 {
-font-size: 70px;
-font-family:'Comforter', cursive;
-color: #b287e7;
+    font-size: 90px;
+    font-family: 'Comforter', cursive;
+    color: #b287e7;
 }
 
-h2{
+h2 {
+    font-size: 20px;
     font-family: 'Varela Round', sans-serif;
+    font-weight: 600;
     color: rgb(32, 31, 31);
 }
 
-/*h1{
-
-    font-size: 50px;
-    color: #b287e7;
-    left: 300px;
-    text-align: center;
-    padding: 20px;
- 
-}*/
+strong {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 600;
+    color: rgb(32, 31, 31);
+}
 
 body>header {
     background-color: rgb(255, 250, 176);
-    height: 200px;
-}
-
-body>header>div {
-    display:inline-block;
 }
 
 body {
-    background-color:rgb(234, 201, 249); ;
+    /*background-image: url(/img/1366_2000.jpg);*/
+    background-color: rgb(234, 201, 249);
 }
+
+
+form {
+    display: flex;
+    flex-direction: column; 
+}
+
+#formWrapper {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 250, 176);
+    padding: 30px;
+  
+}   
+
+#formWrapper>div {
+    border: 1px solid grey;
+    padding: 2em;
+    margin-bottom: 2em;
+    box-shadow: -21px 35px 35px -2px rgba(31, 30, 30, 0.75);
+    border-radius: 33px 50px 40px 0px;
+    width: 40%;
+    background-color: #eaaef3
+}
+
+input {
+    margin-bottom: 1.5em;
+    font-size: 1.5em;
+    border-radius: 4px;
+    border-color:  rgb(207, 124, 223);
+}
+
+textarea{
+    width: 100%;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #8a42e3;
+    padding: 1em;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+button:hover {
+    background-color: #b287e7; 
+    box-shadow:6px 13px 53px -15px rgba(84, 81, 81, 0, 85);
+}
+#formWrapper h4 {
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 2em;
+    text-transform: uppercase;
+    background-color:  #8a42e3;
+    border: solid 1px  #8a42e3 ;
+    border-radius: 10px;
+    padding: 20px;
+}
+label {
+    font-size: 1.5em;
+    font-weight:bold;
+}
+
+#noticias {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    background-color: rgb(234, 201, 249);
+
+}
+
+#noticia1 img{
+    width: 400px;
+
+    
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    background-color: #eaaef3;
+    height: 80px;
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* Centramos los elementos en el nav */
+}
+
+li {
+    padding: 0;
+    width: 150px;
+   
+}
+
+.estiloLinkNav {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    color: #e3e1e3;
+    text-decoration: none;
+    padding: 0px 0px;
+    margin: 15px;
+    background-color:#8a42e3;
+    border-radius: 5px;
+    flex: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+a:hover {
+    background-color: #b287e7;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.63);
+    transform: scale(1.2);
+    text-decoration: underline;
+
+
+}
+
+.noticia {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    columns: 3;
+    width: 30%;
+    align-items: center;
+    border: solid #b287e7 3px;
+    padding: 20px;
+    text-align: center;
+    margin: 50px;
+}
+
+.noticia img {
+    width: 350px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+
+}
+
+.noticia a {
+    text-decoration: none;
+    color: #b287e7
+}
+
+.noticia a:hover {
+    background-color: rgb(234, 201, 249);
+    text-decoration: underline;
+    box-shadow: 0px 0px 0px;
+    transform: scale(1.2);
+
+}
+
+h3 {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.cabecera {
+    padding: 30px;
+    width: 80%;
+}
+
 aside {
-    border: 1px solid white;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px dotted rgb(228, 226, 226);
     position: absolute;
-    top: 250px;
-    width: 270px;
+    top: 1000px;
+    width: 400px;
     right:10px;
     z-index: 2;
     padding: 2em;
     border-radius: 15px;
     border-color: black;
-    height: 200px;
-    color: white;
+    height: 300px;
+    color: rgb(65, 63, 63) bold;
     background-color: #5e72d2;
-    background-image: linear-gradient(43deg, #a965b8 0%, #626eba 46%, #a06696 100%);
+    background-image: linear-gradient(43deg, #f7c5fa 0%, #97a1e1 46%, #f699e6 100%);
 }
+
+aside:hover{
+    transform:scale(2,2);
+    right: 200px;
+}
+
 
 aside > img {
-    width:150px;
-    height: 100px;
-    padding-left:50px;
-
-}
-a {
-  text-decoration:none;
-  color: rgb(190, 28, 219);
-}
-
-ul {
-    list-style-type:circle;
-}
-
-nav>ul>li>a {
-    text-decoration: none;
-    color:#272727;   
-}
-
-a:hover{text-decoration: underline;}
- 
-nav {
-    background-color:rgb(235, 182, 249);
-    color: #272727;
-    padding-top:10px ;
-    padding-right:10px;
-    height: 80px;
-    position: absolute;
-    top: 20px;
-    right:10px;
-    border-radius: 1em;
-    font-size:1em;
-    width:15%;
- }
-h3{
-    padding-bottom: 15px;
-    font-size: 30px;
-}
-
-
-
-
-#noticia_1 {
-    font-family: 'Varela Round', sans-serif;
-    height: 200px;
-    text-align: left;
-    font-size: 20px;
-    padding-top: 50px;
-    padding-left: 50px;
-    width: 800px;
-   
+    width:100px;
+    height:100px;
+    text-align: center;
 
 }
 
-#noticia_2 {
-    font-family: 'Varela Round', sans-serif;
-    height: 200px;
-    text-align: left;
-    font-size: 20px; 
-    padding-top: 50px;
-    padding-left: 50px;
-    width: 800px;
+#comentarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 30px;
+    align-items: center;
 }
 
-#noticia_3 {
-    font-family: 'Varela Round', sans-serif;
-    height: 200px;
-    text-align: left;
-    font-size: 20px;
-    padding-left: 50px;
-    padding-top: 50px;
-    width: 800px;
+article{
+    border: solid rgb(130, 56, 130) 1px;
+    margin-bottom: 5px;
+    justify-content: center;
+    width: 50%;
 }
+
+
 #comentario_1 {
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 30px;
-    padding-left: 100px;
-    background-color: #f4f9ba;
-    font-family: 'Varela Round', sans-serif;
     font-weight: 700;
+    font-family: 'Varela Round', sans-serif;
 }
 
 #comentario_2 {
     display: flex;
-    padding-left: 200px;
-    padding-top: 20px;
-    background-color: #f4f9ba;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
     font-family: 'Varela Round', sans-serif;
     font-weight: 700;
 }
 
 #comentario_3 {
-    display: flex;
-    padding-left: 100px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 30px;
-    background-color: #f4f9ba;
-    padding-bottom: 20px;
     font-family: 'Varela Round', sans-serif;
     font-weight: 700;
 }
 #usuario_1 {
-    width: 70px;
+    width: 80px;
+    
 }
 
 #usuario_2 {
-    width: 70px;
+    width: 80px;
 }
 #usuario_3 {
 
-    width: 70px;
-}
-
-#deja_tu_comentario {
-    height: 350px;
-    width: 300px;
-    background-color: #ebb6f9;
-    position: absolute;
-    top: 850px;
-    right: 50px;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 20px;
-    font-weight: 700;
-    font-size: 18px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    font-family:'Varela Round', sans-serif; 
-    border-style: solid;
-    border-color: #ebb6f9;
-    border-radius: 1em;
-    box-shadow: 25px 30px 30px 3px #5a5858;
-    
-    
-}
-
-h4 {
-    padding-bottom: 20px;
-    text-transform: uppercase;
-    text-align: center;
-
-}
-footer{
-    height: 100px;
-    padding-top: 40px;
-    text-align: right;
-    padding-right: 60px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-    font-size: 20px;
+    width: 80px;
 }
 
 .comentario{ 
-    display: flex;
+    /*display: inline-block;
+    justify-content: flex-start;*/
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom:15px ;
-    width: 150px;
+    padding-bottom:20px ;
+    width: 500px;
+    height: auto;
     background-color: rgb(222, 220, 217);
-    margin-left: 10px;
+    margin-left: 40px;
+    margin-bottom: 30px;
     border-radius: 1em;
-    box-shadow: 5px 15px 15px 3px #5a5858;
+    box-shadow: 5px 15px 15px 3px #5a5858;;
+    border-radius: 0px 33px 40px 50px;
 }
 
-label{
-     width:20px;
-     margin-left: 20px;
+
+footer{
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    text-align: right;
+    padding-right: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 20px;
+    background-color:gray ;
+    color: #e3e1e3;
+}
+
+
+@media (max-width:768px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 100%;
+        background-color: #eaaef3;
+        height: 50px;
+    
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* Centramos los elementos en el nav */
+    }
+    
+    li {
+        padding: 0;
+        width: 200px;
+        margin: 120px;
+    }
+    
+    .estiloLinkNav {
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        display: block;
+        text-align: center;
+        color: #e3e1e3;
+        text-decoration: none;
+        padding: 0px 0px;
+        margin: 15px;
+        background-color: #b287e7;
+        border-radius: 5px;
+        flex: 1;
+    
+    }
+    
+    
+    a:hover {
+        background-color: #8a42e3;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.63);
+        transform: scale(1.2);
+        text-decoration: underline;
+    
+    
     }
 
-input {
-    width: 200px;
-    height: auto;
-    margin-left: 20px;
-}
-button {
+    #logo {
+        width: 30%;
+        justify-content: right;
+    }
+
+    #logo img {
+        width: 200px;
+        padding-left: 20px;
+
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    #titulos {
+        text-align: left;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+
+    li {
+        margin: 30px;
+    }
+
+    #noticias {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+    }
+
+    #noticia1 {
+        display: block;
+        text-align: center;
     
-    background-color: rgb(241, 235, 132);
-    padding: 15px;
-    margin-left: 20px;
-    border-radius: 10px;
-    font-size: 20px;
-    box-shadow: 5px 5px 5px -3px #5a5858;
-     
+    }
+
+    #noticia2 {
+        display: block;
+    }
+
+    #noticia3 {
+        display: block;
+    }
+
+    .cabecera {
+        padding: 5px;
+        width: 100%;
+    }
+
+    #noticia1 img {
+        width: 100%;
+        
+    }
+    #menu a{
+        padding: 5px;
+    }
 }
-textarea{
-    width: 200px;
-    height: 50px;
-    margin-left: 20px;
+
+@media (max-width:595px) {
+
+    body>header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding-top: 25px;
+        margin: 0;
+    }
+
+    body>header>img {
+        width: 50px;
+    }
+
+    #logo {
+        width: 50%;
+        text-align: center;
+    }
+
+    #logo img {
+        width: 150px;
+        padding-left: 50px;
+
+    }
+
+    h1 {
+        font-size: 30px;
+        font-family: 'Comforter', cursive;
+        color: #b287e7;
+    }
+
+    h2 {
+        font-size: 10px;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 600;
+        color: rgb(32, 31, 31);
+    }
+
+    #titulos {
+        justify-content: flex-start;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 10px;
+        padding-right: 30px;
+
+    }
+
+    #noticias {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+        font-size: 15px;
+
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    #noticia1 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        border: solid #b287e7 1px;
+    }
+
+    #noticia2 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        border: solid #b287e7 1px;
+    }
+
+    #noticia3 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        border: solid #b287e7 1px;
+    }
+
+    .cabecera {
+        padding: 0px;
+        width: 100%;
+    }
+
+    #noticia1 img {
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 100%;
+        background-color: #eaaef3;
+        height: 50px;
+        
+    
+    }
+    
+    ul {
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    
+    li {
+        padding: 0;
+        width:100%
+    }
+    
+    .estiloLinkNav {
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 600;
+        font-size: 10px;
+        display: block;
+        text-align:center;
+        color: #e3e1e3;
+        text-decoration: none;
+        background-color: #b287e7;
+      
+        
+    
+    }
+    
+    
+    a:hover {
+        background-color: #8a42e3;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.63);
+        transform: scale(1.2);
+        text-decoration: underline;
+    
+    
+    }
 }
