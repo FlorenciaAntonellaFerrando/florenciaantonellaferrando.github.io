@@ -1,0 +1,30 @@
+
+
+{
+    "noticias" : [
+        {"id" : 1,
+        "titulo" : "Un juegazo para aprender css",
+        "cuerpo" : ["Css Sushi es un juego para aprender de forma divertida Flexbox de Css.", "Pueden acceder al mismo"],
+        "link" : "https://flukeout.github.io/",
+        "txtLink" : "Aqui",
+        "txtimagen" : "imagen de juego css",
+        "imagen" : "img/cssSushi.png"},
+        
+        {"id":2,
+        "titulo" : "Digitalers es la mejor propuesta de capacitación",
+        "cuerpo" : ["Queres ser un jedi del frontend?", "¿Qué estás esperando?", "El programa digitalers es tu oportunidad."],
+        "link" : null,
+        "txtLink" : "Aqui",
+        "txtimagen" : "",
+        "imagen" : "img/digitalers.jpg"},
+        
+        {
+        "id" : 3,
+        "titulo" : "Una IA crea los simpsons en la vida real",
+        "cuerpo" : ["Se le pidió a una IA que retrate a los simpsons en la vida real y esto es lo que salió.", "Puedes verlos en el siguiente link"],
+        "link" : "https://elcomercio.pe/tecnologia/inteligencia-artificial/asi-se-verian-los-personajes-de-los-simpsons-en-la-vida-real-segun-una-ia-fotos-inteligencia-artificial-midjourney-noticia/?ref=ecr",
+        "txtLink" : "Aqui",
+        "txtimagen" : "",
+        "imagen" : false}
+    ]
+}
